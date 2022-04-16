@@ -44,13 +44,3 @@ jobs:
           name: Deploy App FrontEnd
           command: |
             npm run Frontend:deploy
-workflows:
-  basic-workflow:
-    jobs:
-    #build job is triggered when main branch has pushed changes
-    steps:
-      -build:
-          filters:
-            branches:
-              only: main
-  
