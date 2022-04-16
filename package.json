@@ -2,7 +2,7 @@
     "scripts": {           
                 "Frontend:install": "cd udagram-frontend && yarn",
                 "Backend:install": "cd udagram-api && npm install",
-                "Frontend:build": "cd udagram-frontend && npm run build",
+                "Frontend:build": "cd udagram-frontend && yarn build",
                 "Backend:build": "cd udagram-api && npm run build",
                 "Frontend:deploy": "cd udagram-frontend && npm run deploy",
                 "Backend:deploy": "cd udagram-api && npm run deploy"
