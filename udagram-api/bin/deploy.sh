@@ -1,0 +1,1 @@
+aws s3 cp --recursive --acl public-read ./wwww/Archive.zip s3://bucket-udagram/
