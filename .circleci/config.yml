@@ -24,7 +24,7 @@ jobs:
           name: Install API Packages
           command: |
             npm run Backend:install
-              - run:
+      - run:
           name: Front-End Build
           command: |
             npm run frontend:build
