@@ -3,6 +3,8 @@ branch-defaults:
     environment: ebEnvDeployment
   main:
     environment: ebEnvDeployment
+deploy:
+  artifact: www/Archive.zip
 environment-defaults:
   ebEnvDeployment:
     branch: main

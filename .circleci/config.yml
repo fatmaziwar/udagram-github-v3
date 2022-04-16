@@ -35,12 +35,22 @@ jobs:
       - run:
           name: Back-End Build
           command: |
-            npm run Backend:build
-      - run:
-          name: Deploy App FrontEnd
-          command: |
-            npm run Frontend:deploy
+            npm run Backend:build      
       - run:        
           name: Deploy App Back-End
           command: |
             npm run Backend:deploy
+      - run:
+          name: Deploy App FrontEnd
+          command: |
+            npm run Frontend:deploy
+workflows:
+  basic-workflow:
+    jobs:
+    #build job is triggered when main branch has pushed changes
+    steps:
+      -build:
+          filters:
+            branches:
+              only: main
+  
