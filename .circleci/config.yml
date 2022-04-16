@@ -11,11 +11,15 @@ jobs:
       # the base image can run most needed actions with orbs
       - image: "cimg/base:stable"
     steps:
-      - node/install
+      - node/install      
       - checkout
       - aws-cli/setup
       - ebs-cli/setup
       # install dependencies in both apps
+      - run:
+          name: Install yarn
+          command: |
+            npm install --global yarn
       - run:
           name: Install Front-End Packages
           command: |
