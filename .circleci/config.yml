@@ -31,16 +31,16 @@ jobs:
       - run:
           name: Front-End Build
           command: |
-            npm run frontend:build
+            npm run Frontend:build
       - run:
           name: Back-End Build
           command: |
-            npm run backend:build
+            npm run Backend:build
       - run:
           name: Deploy App FrontEnd
           command: |
-            npm run frontend:deploy
+            npm run Frontend:deploy
       - run:        
           name: Deploy App Back-End
           command: |
-            npm run backend:deploy
+            npm run Backend:deploy
