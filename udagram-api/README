@@ -1,0 +1,3 @@
+## This Application was successfully automated for deployment and deployed using circleci
+## Full documentation and screenshots is available in a separate Documentation folder
+[![CircleCI](https://circleci.com/gh/fatmaziwar/udagram-github-v3/tree/main.svg?style=svg)](https://circleci.com/gh/fatmaziwar/udagram-github-v3/tree/main)
